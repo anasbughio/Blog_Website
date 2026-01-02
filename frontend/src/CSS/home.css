@@ -1,0 +1,22 @@
+.home-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+/* Fixed width for sidebar like Dev.to */
+.home-container > aside {
+  width: 240px; /* Adjust width */
+  position: sticky;
+  top: 80px; /* navbar height */
+  height: calc(100vh - 80px);
+}
+
+/* Main content preserves previous GetPosts width */
+.main-content {
+  flex: 1;
+  min-width: 700px; /* keeps posts feed width as before */
+}

@@ -1,0 +1,38 @@
+.left-sidebar {
+  width: 220px;
+  min-width: 220px;
+  padding: 20px;
+  background-color: #f8f9fa; /* light dev.to style background */
+  border-radius: 12px;
+  position: sticky;
+  top: 80px; /* stays visible while scrolling */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-logo a {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #111827;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a202c;
+  transition: color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: #3182ce;
+}

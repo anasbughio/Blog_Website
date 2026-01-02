@@ -1,0 +1,115 @@
+/* Full page background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Card */
+.login-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.login-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.login-input {
+  width: 93%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #3182ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background-color: #225ea8;
+  transform: translateY(-1px);
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+}
+
+/* Small links */
+.login-form a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #3182ce;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+.signup-text {
+  text-align: center;
+  font-size: 13px;
+  color: #718096;
+  margin-top: 10px;
+}
+
+.signup-text a {
+  color: #3182ce;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .login-form {
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,8 @@
+Delete http://localhost:5000/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "id":"689b1b905632d4cafc0e3c65"
+}
+
